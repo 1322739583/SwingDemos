@@ -1,0 +1,114 @@
+JFDML JFormDesigner: "7.0.2.6.321" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][78,fill][153,fill][274,fill][204,fill][151,fill][230,fill]"
+			"$rowConstraints": "[][][][][305]"
+		} ) {
+			name: "this"
+			"title": "fob"
+			"font": new java.awt.Font( "宋体", 0, 16 )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"toolTipText": "input your api"
+				"border": new javax.swing.border.BevelBorder( 1, null, null, null, null )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 0 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "生成"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 0"
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "hidemode 3"
+					"$columnConstraints": "[fill][fill]"
+					"$rowConstraints": "[][][]"
+				} ) {
+					name: "panel3"
+				}, new FormLayoutConstraints( null ) {
+					"title": "历史记录"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "hidemode 3"
+					"$columnConstraints": "[149,fill][139,fill]"
+					"$rowConstraints": "[][][]"
+				} ) {
+					name: "panel4"
+				}, new FormLayoutConstraints( null ) {
+					"title": "收藏夹"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 0 1 3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Service路径"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1,hmin 30"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1 4 1,wmin 500,hmin 30"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "打开"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Service名字"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 2,hmin 30"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2 4 1,wmax 180,hmin 30"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "状态码:"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "响应时间:"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "大小:"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 3"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 4 6 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 30 )
+			"size": new java.awt.Dimension( 960, 505 )
+		} )
+	}
+}
